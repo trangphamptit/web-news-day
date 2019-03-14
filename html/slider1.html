@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content 
+
+must come *after* these tags -->
+    <title>slider1</title>
+
+    <!-- Bootstrap -->
+    <link href="../lib/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="../css/slider1.css">
+    <link rel="stylesheet" href="../css/animate.min.css">
+    <link rel="stylesheet" href="../lib/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script src="../lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
+    <!--<script type="text/javascript" src="../js/index.js"></script>-->
+    <script type="text/javascript" src="../js/slider1.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+    <div id="header" class="header">
+        <div class="container">
+            <div class="row">
+
+                <div class="hLeft col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <img class="logo col-lg-6 col-md-6 col-sm-6 col-xs-6" src="../image/newlogo.png" alt="">
+                    <span class="slogan col-lg-6 col-md-6 col-sm-6 col-xs-6"><i>NEWSDAY.com</i></span>
+                </div>
+
+                <div class="hRight col-lg-6 col-md-6 col-sm-6 col-xs-12">
+
+                    <div class="icon">
+                        <a href="#"><i class="contact fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="#"><i class="contact fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#"><i class="contact fa fa-youtube" aria-hidden="true"></i></a>
+                        <a href="#"><i class="contact fa fa-github" aria-hidden="true"></i></a>
+                    </div>
+                    <!--tao thanh tim kiem-->
+                    <div id="Search">
+                        <form>
+                            <input type="search" placeholder="Search">
+                        </form>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <!--menu-->
+    <div class="navbar navbar-inverse" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse" style="height: 1px;">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#"><i class="fa fa-home" aria-hilien="true"></i></a></li>
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">TRONG NƯỚC<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">GIAO THÔNG</a></li>
+                            <li><a href="#">PHÓNG SỰ - KÝ SỰ</a></li>
+                            <li><a href="#">TIÊU ĐIỂM</a></li>
+                            <li><a href="#">TIN TỨC TRONG NƯỚC</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">THẾ GIỚI<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">GÓC NHÌN</a></li>
+                            <li><a href="#">HỒ SƠ</a></li>
+                            <li><a href="#">NGƯỜI VIỆT NĂM CHÂU</a></li>
+                            <li><a href="#">THẾ GIỚI ĐÓ ĐÂY</a></li>
+                            <li><a href="#">TIN TỨC THẾ GIỚI</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">VĂN HOÁ<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+
+                            <li><a href="#">CÂU CHUYỆN LỊCH SỬ</a></li>
+                            <li><a href="#">CỔ HỌC TINH HOA</a></li>
+                            <li><a href="#">GÓC NHÌN VĂN HÓA</a></li>
+                            <li><a href="#">KIẾN GIẢI VĂN HÓA VĂN MINH</a></li>
+                            <li><a href="#">NHÂN SINH CẢM NGỘ</a></li>
+                            <li><a href="#">QUÀ TẶNG TÂM HỒN</a></li>
+                            <li><a href="#">VĂN HÓA THẦN TRUYỀN</a></li>
+                            <li><a href="#">VẺ ĐẸP CHÂN THIỆN NHẪN</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">KINH TẾ</span></a></li>
+
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">NGHỆ THUẬT<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">ÂM NHẠC</a></li>
+                            <li><a href="#">ĐIỆN ẢNH</a></li>
+                            <li><a href="#">HỘI HỌA</a></li>
+                            <li><a href="#">KIẾN TRÚC</a></li>
+                            <li><a href="#">MÚA</a></li>
+                            <li><a href="#">NHIẾP ẢNH</a></li>
+                            <li><a href="#">TÂM LINH</a></li>
+                            <li><a href="#">VĂN THƠ</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">ĐỜI SỐNG<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">ẨM THỰC</a></li>
+                            <li><a href="#">GIA ĐÌNH</a></li>
+                            <li><a href="#">KHÁM PHÁ</a></li>
+                            <li><a href="#">KỸ NĂNG</a></li>
+                            <li><a href="#">LÀM ĐẸP</a></li>
+                            <li><a href="#">SỐNG ĐẸP</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">KH-CN<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">BÍ ẨN CƠ THỂ NGƯỜI</a></li>
+                            <li><a href="#">BÍ ẨN VŨ TRỤ</a></li>
+                            <li><a href="#">CÔNG NGHỆ</a></li>
+                            <li><a href="#">KHẢO CỔ</a></li>
+                            <li><a href="#">KHOA HỌC HUYỀN BÍ</a></li>
+                            <li><a href="#">KIẾN THỨC HỮU ÍCH</a></li>
+                            <li><a href="#">TIN TỨC KHOA HỌC</a></li>
+                            <li><a href="#">UFO</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">GIẢI TRÍ<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">ÂM NHẠC</a></li>
+                            <li><a href="#">CHUYỆN LẠ</a></li>
+                            <li><a href="#">DU LỊCH</a></li>
+                            <li><a href="#">ĐIỆN ẢNH - TRUYỀN HÌNH</a></li>
+                            <li><a href="#">GIỚI SAO</a></li>
+                            <li><a href="#">THỂ THAO</a></li>
+                            <li><a href="#">THỜI TRANG</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">ẢNH ĐẸP</a>
+                    </li>
+
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">VIDEO</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <!--end menu-->
+
+
+    <div id="wrapper" class="container">
+
+        <div class="row">
+
+            <div id="left" class="left col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                <div id="mainContent" class="mainContent">
+                    <!--json-->
+
+                </div>
+                <!--danh gia-->
+                <div class="stars">
+                    <form action="">
+                        <input class="star star-5" id="star-5" type="radio" name="star" />
+                        <label class="star star-5" for="star-5"></label>
+                        <input class="star star-4" id="star-4" type="radio" name="star" />
+                        <label class="star star-4" for="star-4"></label>
+                        <input class="star star-3" id="star-3" type="radio" name="star" />
+                        <label class="star star-3" for="star-3"></label>
+                        <input class="star star-2" id="star-2" type="radio" name="star" />
+                        <label class="star star-2" for="star-2"></label>
+                        <input class="star star-1" id="star-1" type="radio" name="star" />
+                        <label class="star star-1" for="star-1"></label>
+                    </form>
+                </div>
+
+                <!--share-->
+                <div class="cell ">
+                    <div class="share-wrapper left">
+                        <div class="share-action icon-share"></div>
+                        <div class="share-container">
+                            <a class="share-btn tl icon-google-plus" href='#'></a>
+                            <a class="share-btn tr icon-twitter" href='#'></a>
+                            <a class="share-btn br icon-facebook" href='#'></a>
+                            <a class="share-btn bl icon-pinterest" href='#'></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--xem them-->
+                <h2>Xem thêm</h2>
+                <div id="readMore" class="readmore">
+
+                    <!--json-->
+                </div>
+
+                <!--tags-->
+
+                <div id="tags" class="tags">
+                    <a class="btn btn-primary active" href="#"><i class="fa fa-tags" aria-hidden="true"></i>TAGS</a>
+                    <input class="btn btn-primary" type="submit" value="động đất">
+                    <input class="btn btn-primary" type="submit" value=" New Zealand">
+                </div>
+                <!--comment-->
+                <div class="comment">0 bình luận</div>
+                <textarea style="width: 100%; height: auto" name="comment" form="usrform" placeholder="Thêm bình luận..."></textarea>
+                <br>
+                <input style="padding: 5px 8px; background-color: #337ab7; float: left" type="submit">
+
+                <!--related article: bai lien quan-->
+                <h1>CÁC BÀI LIÊN QUAN</h1>
+                <div id="related-article" class="related-article col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+                    <!--json-->
+
+                </div>
+
+                <!--pagination bootstrap-->
+                <nav aria-label="Page navigation">
+                    <ul class="pagination">
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Previous" style="color: black">
+                                <span aria-hidden="true">&laquo;</span>
+                                <span class="sr-only">Previous</span>
+                                </a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#" style="color: black">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#" style="color: black">2</a></li>
+
+                        <li class="page-item"><a class="page-link" href="#" style="color: black">...</a></li>
+                        <li class="page-item"><a class="page-link" href="#" style="color: black">7</a></li>
+                        <li class="page-item"><a class="page-link" href="#" style="color: black">8</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next" style="color: black">
+                            <span aria-hidden="true">&raquo;</span>
+                            <span class="sr-only">Next</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <span style="float: right; padding-top: 30px"> Trang 1/228</span>
+
+                </nav>
+
+
+                <div id="video" class="video-responsive">
+                    <h1>VIDEO CHỌN LỌC</h1>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/B5pFS8XD_MM" frameborder="0" allowfullscreen></iframe>
+                </div>
+
+
+            </div>
+
+            <div id="right" class="right col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <h1>BÀI MỚI NHẤT</h1>
+
+                <ul id="hotNews" class="hotNews">
+                    <!--json-->
+                </ul>
+                <h1>VĂN HOÁ</h1>
+                <div id="vanHoa" class="sidebar">
+
+                    <!--json-->
+                </div>
+
+                <h1>CÂU CHUYỆN</h1>
+                <div id="cauChuyen" class="sidebar">
+                    <!--json-->
+                </div>
+
+                <div id="follow" class="follow">
+                    <!--insert facebookpage-->
+                </div>
+                <!--pr-->
+                <img class="pr" src="https://goo.gl/FkPw7G" alt="https://goo.gl/QTY3r8">
+                <h1>BÀI XEM NHIỀU</h1>
+                <div id="manyViews" class="manyViews">
+
+                    <!--json-->
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--footer-->
+    <div id="footer" class="footer">
+
+        <nav class="navbar navbar-inverse">
+            <div class="container">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#"><i class="fa fa-home" aria-hilien="true"></i></a></li>
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">TRONG NƯỚC</a>
+                    </li>
+
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">THẾ GIỚI</a>
+
+                    </li>
+
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">VĂN HOÁ</a>
+
+                    </li>
+
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">KINH TẾ</a>
+                    </li>
+
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">NGHỆ THUẬT</a>
+
+                    </li>
+
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">ĐỜI SỐNG</a>
+
+                    </li>
+
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">KH-CN</a>
+
+                    </li>
+
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">GIẢI TRÍ</a>
+
+                    </li>
+
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">ẢNH ĐẸP</a>
+                    </li>
+
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">VIDEO</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <h4>TRỤ SỞ HÀ NỘI</h4>
+                    <p>Tầng 20, tòa nhà Center Building, Hapulico Complex, số 1 Nguyễn Huy Tưởng, p. Thanh Xuân Trung, quận
+                        Thanh Xuân, Hà Nội. Điện thoại: 024.39743410, máy lẻ 230.</p>
+                    <a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i><span>XEM BẢN ĐỒ<span></a>
+                    <h4>TRỤ SỞ TP.HCM</h4>
+                    <p>Tầng 6 Tòa nhà 123, 123 Võ Văn Tần, phường 6, quận 3, Tp. HCM Điện thoại: 028.73077979, máy lẻ 216</p>
+                    <a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i><span>XEM BẢN ĐỒ<span></a>
+                </div>
+
+                <div class="col-lg-4 col-md-4  col-sm-4 col-xs-12">
+                    <h4>CHỊU TRÁCH NHIỆM QUẢN LÝ NỘI DUNG</h4>
+                    <p>Phạm Thị Thuỳ Trang</p>
+                    <p>Đào Thị Thảo Nguyên</p>
+                    <h4>HỢP TÁC NỘI DUNG</h4>
+                    <p><i class="fa fa-phone" aria-hidden="true"></i>0971555495</p>
+                    <p><i class="fa fa-envelope-o" aria-hidden="true"></i><a href="#">marketing@newday.vn</a></p>
+                    <h4>LIÊN HỆ QUẢNG CÁO</h4>
+                    <p><i class="fa fa-phone" aria-hidden="true"></i>0971555445</p>
+                    <p><i class="fa fa-envelope-o" aria-hidden="true"></i><a href="#">thuytrangadmin@gmail.com</a></p>
+                    <h4><a href="#">CHÍNH SÁCH BẢO MẬT</a></h4>
+                </div>
+
+                <div class="col-lg-4 col-md-4  col-sm-4 col-xs-12">
+                    <h4><span>LIÊN HỆ</span></h4>
+                    <a href="#"><i class="contact fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="#"><i class="contact fa fa-twitter" aria-hidden="true"></i></a>
+                    <a href="#"><i class="contact fa fa-youtube" aria-hidden="true"></i></a>
+                    <a href="#"><i class="contact fa fa-github" aria-hidden="true"></i></a>
+
+                    <div>
+                        <div class="form-group">
+                            <label for="usr">Email:</label>
+                            <input type="text" class="form-control" id="usr" placeholder="Enter your email...">
+                        </div>
+                        <div class="form-group">
+                            <label for="pwd">Phone number:</label>
+                            <input type="password" class="form-control" id="pwd" placeholder="Enter your phone number...">
+                        </div>
+                        <div class="form-group">
+                            <label for="comment">Comment:</label>
+                            <textarea class="form-control" rows="5" id="comment" placeholder="Your comment..."></textarea>
+                        </div>
+                        <button class="btn btn-primary" type="submit">Đăng</button>
+                    </div>
+                </div>
+
+                <!--<button style="position: fixed; bottom: 25px; right: 25px; border-radius: 50%; background-color: #337ab7; color: white; padding: 10px"
+                    id="toTop" type="button" onclick="toTopPage (10)"><i class="fa fa-hand-o-up" aria-hidden="true"></i>
+                </button>-->
+                <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-hand-o-up" aria-hidden="true"></i></button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

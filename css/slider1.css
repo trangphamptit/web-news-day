@@ -1,0 +1,785 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+/*HEADER*/
+body{
+    font-family: Roboto;
+    background-color: gray;
+}
+
+/*header*/
+#header{
+     background-image: url('../image/images.jpg');
+     background-repeat: no-repeat;
+     background-size: cover;
+     height: 220px;
+}
+
+/*left*/
+#header .hLeft{
+    position: relative;
+
+}
+/*logo*/
+#header .hLeft .logo{
+    width: 220px;
+    height: auto;
+   left: 20px;
+   top: 20px;
+   position: absolute;
+}
+
+/*slogan*/
+
+
+#header .hLeft .slogan{
+
+color: red;
+top: 150px;
+right: 20px;
+
+  font: 400 30pt/1.0 'Great Vibes', Helvetica, sans-serif;
+  font-weight: 600;
+  text-shadow: 4px 4px 3px rgba(0,0,0,0.1); 
+
+}
+/*right*/
+#header .icon{
+    text-align: right;
+    margin-top: 30px;
+}
+
+/*icons*/
+#header .hRight .contact{
+    font-size: 20px;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    color:black;
+    background-color: white;
+}
+/*search copy*/
+#header .hRight #Search{
+    text-align:right;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+input[type=search] {
+    -webkit-appearance: textfield;
+    -webkit-box-sizing: content-box;
+    font-family: inherit;
+    font-size: 100%;
+}
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button {
+    display: none; /* remove the search and cancel icon */
+}
+/* search input field */
+input[type=search] {
+    background: #ededed url(search-icon.png) no-repeat 9px center;
+    border: solid 1px #ccc;
+    padding: 9px 10px 9px 32px;
+    width: 55px;
+ 
+    -webkit-border-radius: 10em;
+    -moz-border-radius: 10em;
+    border-radius: 10em;
+ 
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s;
+}
+input[type=search]:focus {
+    width: 130px;
+    background-color: #fff;
+    border-color: #6dcff6;
+ 
+    -webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
+    -moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
+    box-shadow: 0 0 5px rgba(109,207,246,.5);
+}
+/* placeholder */
+input:-moz-placeholder {
+    color: #999;
+}
+input::-webkit-input-placeholder {
+    color: #999;
+}
+/*end search*/
+/*end header*/
+
+ul{
+  list-style: none;
+  padding-left: 0px;
+}
+ul li i{
+  padding-right: 5px;
+}
+#wrapper{
+    background-color: white;
+}
+/*cot ben trai*/
+#left{
+    border-right: 1px solid #e6e6e6;   
+}
+
+/*tieu de*/
+#left .mainContent .title{
+color: black;
+font-size: 20pt;
+padding-top: 10px;
+font-weight: 500;
+
+}
+/*thoi gian*/
+#left .mainContent .time{
+    padding-top: 10px;
+}
+
+
+
+#left .mainContent .detail{
+    font-size: 15pt;
+    padding-top: 10px;
+}
+
+#left .mainContent .mainContent-image{
+padding-top: 10px;
+width: 100%;
+height: auto;
+}
+
+#left .mainContent .author{
+    text-align: right;
+    font-size: 15pt;
+}
+
+/*binh chon*/
+div.stars {
+  width: 220px;
+  display: inline-block;
+  padding-left: 0px;
+}
+ 
+input.star { display: none; }
+ 
+label.star {
+  float: right;
+  padding: 10px;
+  font-size: 25px;
+  color: #444;
+  transition: all .2s;
+}
+ 
+input.star:checked ~ label.star:before {
+  content: '\f005';
+  color: #FD4;
+  transition: all .25s;
+}
+ 
+input.star-5:checked ~ label.star:before {
+  color: #FE7;
+  text-shadow: 0 0 20px #952;
+}
+ 
+input.star-1:checked ~ label.star:before { color: #F62; }
+ 
+label.star:hover { transform: rotate(-15deg) scale(1.3); }
+ 
+label.star:before {
+  content: '\f006';
+  font-family: FontAwesome;
+}
+
+/* ///// MAIN CIRCLE ///// */
+#circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #747392;
+    position: absolute;
+    z-index:2;
+    top: 25px;
+    left: 25px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, .11), 0 4px 8px rgba(0, 0, 0, .22);
+    cursor: pointer;
+}
+#circle:after {
+    content:'';
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(81, 80, 122, 0.6);
+    left: 35px;
+    top: 35px;
+}
+#circle i {
+    font-size: 40px;
+    color: #fff;
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    z-index: 1;
+}
+#circle i.icon1 {
+    opacity: 1;
+}
+#circle i.icon2 {
+    opacity: 0;
+    top: 25px;
+    left: 22px;
+}
+/* ANIMATION */
+#circle, #circle i, #circle:after {
+    -webkit-transition: all .2s cubic-bezier(.4, 0, .2, 1);
+    transition: all .2s cubic-bezier(.4, 0, .2, 1);
+}
+/* HOVER */
+#circle:hover {
+    background: #626186;
+    box-shadow: 0 0 4px rgba(0, 0, 0, .15), 0 4px 8px rgba(0, 0, 0, .30);
+}
+#circle:hover:after {
+    width: 80px;
+    height: 80px;
+    left: 0;
+    top: 0;
+}
+#circle:hover > i {
+    -webkit-transform: rotate(720deg);
+    transform: rotate(720deg);
+}
+#circle:hover > i.icon1 {
+    opacity: 0;
+}
+#circle:hover > i.icon2 {
+    opacity: 1;
+}
+
+
+/*share*/
+/*tạo icon*/
+@font-face{
+    font-family:FontAwesome;
+    src:url(http://netdna.bootstrapcdn.com/font-awesome/2.0/font//fontawesome-webfont.eot?#iefix) format('eot'),
+    url(http://netdna.bootstrapcdn.com/font-awesome/2.0/font//fontawesome-webfont.woff) format('woff'),
+    url(http://netdna.bootstrapcdn.com/font-awesome/2.0/font//fontawesome-webfont.ttf) format('truetype'),
+    url(http://netdna.bootstrapcdn.com/font-awesome/2.0/font//fontawesome-webfont.svg#FontAwesome) format('svg');
+    font-weight:400;font-style:normal;}
+ 
+/*  Font Awesome styles
+    ------------------------------------------------------- */
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  text-decoration: inherit;
+}
+a [class^="icon-"], a [class*=" icon-"] {
+  display: inline-block;
+  text-decoration: inherit;
+}
+/* makes the font 33% larger relative to the icon container */
+.icon-large:before {
+  vertical-align: top;
+  font-size: 1.3333333333333333em;
+}
+.btn [class^="icon-"], .btn [class*=" icon-"] {
+  /* keeps button heights with and without icons the same */
+ 
+  line-height: .9em;
+}
+li [class^="icon-"], li [class*=" icon-"] {
+  display: inline-block;
+  width: 1.25em;
+  text-align: center;
+}
+li .icon-large[class^="icon-"], li .icon-large[class*=" icon-"] {
+  /* 1.5 increased font size for icon-large * 1.25 width */
+ 
+  width: 1.875em;
+}
+li[class^="icon-"], li[class*=" icon-"] {
+  margin-left: 0;
+  list-style-type: none;
+}
+li[class^="icon-"]:before, li[class*=" icon-"]:before {
+  text-indent: -2em;
+  text-align: center;
+}
+li[class^="icon-"].icon-large:before, li[class*=" icon-"].icon-large:before {
+  text-indent: -1.3333333333333333em;
+}
+/*  Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
+    readers do not read off random characters that represent icons */
+.icon-facebook:before             { content: "\f09a"; }
+.icon-twitter:before              { content: "\f099"; }
+.icon-pinterest:before            { content: "\f0d2"; }
+.icon-google-plus:before          { content: "\f0d5"; }
+ 
+.icon-share:before                { content: "\f045"; }
+
+/*tao khung chua icon*/
+.cell {
+  float: left;
+  left: 30px;
+  top: 50px;
+  position: relative;
+}
+ 
+.share-wrapper,
+.share-action {
+  width: 32px;
+  height: 32px;
+}
+ 
+.share-wrapper {
+  font: 14px, 'FontAwesome';
+  position: relative;
+  text-align: center;
+}
+ 
+/* dinh dang cho nut share */
+.share-action {
+  display: inline-block;
+  vertical-align: middle;
+  z-index: 5;
+  position: relative;
+  background: linear-gradient(#8df 0%, #29d 100%);
+  box-shadow: 0 1px 5px rgba(255, 255, 255, 0.5) inset, 0 0 0px 1px rgba(33, 112, 178, 0.5);
+  line-height: 33px;
+  color: #fff;
+}
+
+/*ẩn icon*/
+
+.share-container {
+  margin-left: 0px;
+  margin-top:  0px;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(.05,.93,.61,1.6);
+  box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.5);
+  width: 0px;
+  height: 0px;
+  background: #fff;
+  position: absolute;
+  top: 0%;
+  right: 50%;
+}
+
+/*icon hiển thị khi rê chuột*/
+.share-action:hover ~ .share-container,
+.share-container:hover {
+  width: 100px;
+  height: 100px;
+ 
+  overflow: visible;
+}
+
+/*sắp xếp các icon*/
+
+/* hiện khung chứa các icon, nhưng icon sẽ dc ẩn đi với giá trị font-size: 0px; */
+.share-btn {
+  display:inline-block;
+  width: 49%;
+  height: 49%;
+  position: absolute;
+  z-indez:1;
+  border-color: #92888f;
+  border-style: solid;
+  border-width: 0;
+  font-size: 0px;
+  color: #777777;
+  overflow: hidden;
+}
+ 
+/* Đưa sang trái */
+.left.share-wrapper {
+  margin: 50% 0 0 65%;
+  top: -16px;
+}
+ 
+/* hien cac icon khi re chuot vao nut share*/
+.share-action:hover ~ .share-container .share-btn ,
+.share-container:hover .share-btn  {
+  overflow: visible;
+  font-size: 25px;
+}
+ 
+/*phan bo vi tri cho tung icon*/
+.share-btn:hover {
+  background:linear-gradient(#8df 0%, #29d 100%);
+  color: #ffffff;
+  text-shadow: 0 -1px #4298e0;
+}
+ 
+.share-btn.tl {
+  right: 50%;
+  bottom: 50%;
+ 
+}
+.share-btn.tr {
+  left: 50%;
+  bottom: 50%;
+ 
+}
+.share-btn.br {
+  left: 50%;
+  top: 50%;
+ 
+}
+.share-btn.bl {
+  right: 50%;
+  top: 50%;
+ 
+}
+ 
+.share-btn {
+  line-height: 50px;
+}
+
+/*tạo dấu mũi tên*/
+.left .share-action:hover ~ .share-container .share-btn:nth-child(2):after,
+.left .share-container:hover .share-btn:nth-child(2):after {
+  content: '';
+  border: 11px solid transparent;
+  border-left-color: #fff;
+  border-right: none;
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: 100%;
+  top: 100%;
+  margin-top: -11px;
+}
+
+/*đưa các icon về bên trái*/
+.left .share-action:hover ~ .share-container,
+.left .share-container:hover {
+  margin-right: 20px;
+  right: 100%;
+  top: -100%;
+}
+ 
+.left .share-action:hover:after {
+  position: absolute;
+  content: '';
+  z-index: 1;
+  left: auto;
+  width: 20px;
+  height: 200%;
+  top: -50%;
+  right: 100%;
+}
+/*end icon*/
+
+
+
+
+/*xem them*/
+#left #readMore{
+
+}
+#left #readMore h2{
+    font-weight: 500;
+   padding-top: 10px;
+}
+#left #readMore li a{
+padding-top: 10px;
+color:red;
+font-size: 15pt;
+text-decoration: none;
+}
+
+/*tags*/
+#tags{
+margin-top: 20px;
+margin-bottom: 20px;
+}
+#tags input.btn{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+ 
+.btn-primary.active, .btn-primary:active, .open>.dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: black;
+}
+
+
+#left h1{
+  padding-top: 20px;
+}
+
+
+
+
+
+/*related-article*/
+#left #related-article{
+  margin-bottom: 20px;
+  padding-left: 0px;
+  padding-right: 0px;
+ 
+}
+
+#left #related-article .related-item{
+ padding: 5px 5px 10px 0px;
+}
+
+
+#left #related-article .related-item .related-image{
+width: 100%;
+height: auto;
+margin-bottom: 10px;
+}
+
+h1{
+    border-bottom: 2px solid blue;
+    color: blue;
+    font-size: 18pt;
+    padding-bottom: 5px;
+}
+h1:hover{
+    cursor: pointer;
+}
+
+
+#left #related-article .related-item .related-title{
+    font-size: 13pt;
+    color: black;
+}
+#left #related-article .related-item .related-title:hover{
+    color: red;
+   font-size: 13pt;
+    text-decoration: none;
+}
+
+
+
+#left #related-article .related-item .related-author{
+
+}
+
+/*video*/
+.video-responsive{
+margin-bottom: 15px;
+
+}
+.video-responsive iframe{
+  width: 100%;
+  max-height: 350px;
+ 
+}
+
+/*bai moi nhat*/
+#right #hotNews{
+
+
+}
+
+#right #hotNews li{
+border-bottom: 1px dotted #6e6e6e;
+padding-top: 10px;
+padding-bottom: 10px;
+    
+}
+
+#right #hotNews li.last{
+border-bottom: none;
+padding-top: 10px;
+padding-bottom: 10px;
+    
+}
+
+#right #hotNews li i{
+  margin-right: 5px;
+}
+
+#right{
+    
+}
+
+#right .sidebar{
+
+}
+
+#right .sidebar .sidebar-image{
+margin-top: 10px;
+margin-bottom: 10px;
+width: 100%;
+height: auto;
+}
+
+
+#right .sidebar .sidebar-title a{
+font-size: 15pt;
+}
+
+.pr{    
+    margin: 20px 0px;
+   width: 100%;
+}
+
+.manyViews{
+    padding-left: 0px;
+    padding-right: 0px;
+
+}
+.manyViews .manyViews-item{
+    margin-top: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+    border-bottom: 1px dotted #6e6e6e;
+    padding-bottom: 10px;
+}
+
+.manyViews .manyViews-item .manyViews-item-image{
+padding: 0px;
+padding-right: 10px;
+}
+
+.manyViews .manyViews-item .manyViews-item-infor{
+    
+    padding-left:0px;
+    padding-right: 0px;
+}
+
+a{
+  font-size: 12pt;
+    color: black;
+}
+
+a:hover{
+    color: red;
+    text-decoration: none;
+}
+.manyViews .manyViews-item-last{
+  margin-top: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 10px;
+}
+
+.manyViews .manyViews-item-last .manyViews-item-image{
+padding: 0px;
+padding-right: 10px;
+}
+
+.manyViews .manyViews-item-last .manyViews-item-infor{
+    
+    padding-left:0px;
+    padding-right: 0px;
+}
+
+/*back to top*/
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: blue; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 10px; /* Some padding */
+    border-radius: 50%; /* Rounded corners */
+}
+
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
+
+
+
+/*footer*/
+.footer{
+    margin-top: 20px;
+    min-height: 350px;
+      background-image: url('../image/images.jpg');
+     background-repeat: no-repeat;
+     background-size: cover;
+     padding-bottom: 20px;
+     color: black;
+}
+.footer a{
+  color: black;
+}
+.footer a:hover{
+  color:red;
+}
+.footer .contact{
+    font-size: 20px;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    color:black;
+    background-color: white;
+
+}
+.footer .input{
+height: 40px;;
+width: 160px;
+padding: 5px;
+border: none;
+background-color: white;
+color: #000;
+}
+
+
+
+/*Ipad ngang(1024 x 768)*/
+@media screen and (max-width: 1024px){
+    .pr{
+      display: none;
+    }
+}
+/*Ipad dọc(768 x 1024)*/
+@media screen and (max-width: 768px){
+    
+}
+/*Tablet nhỏ(480 x 640)*/
+@media screen and (max-width: 480px){
+     .pr{
+      display: none;
+    }
+    #header .hRight #Search{
+      display: none;
+    }
+}
+/*Iphone(480 x 640)*/
+@media screen and (max-width: 320px){
+     .pr{
+      display: none;
+    }
+    #header .hRight #Search{
+      display: none;
+    }
+}
+/*Smart phone nhỏ*/
+@media screen and (max-width: 240px){
+     .pr{
+      display: none;
+    }
+   #header .hRight #Search{
+      display: none;
+    }
+}
+
+
+
+

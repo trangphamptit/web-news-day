@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+body{
+    font-family: Roboto;
+    background-color: gray;
+}
+
+/*header*/
+#header{
+     background-image: url('../image/images.jpg');
+     background-repeat: no-repeat;
+     background-size: cover;
+     height: 220px;
+}
+
+/*left*/
+#header .hLeft{
+    position: relative;
+
+}
+/*logo*/
+#header .hLeft .logo{
+    width: 220px;
+    height: auto;
+   left: 20px;
+   top: 20px;
+   position: absolute;
+}
+
+/*slogan*/
+
+
+#header .hLeft .slogan{
+
+color: red;
+top: 150px;
+right: 20px;
+
+  font: 400 30pt/1.0 'Great Vibes', Helvetica, sans-serif;
+  font-weight: 600;
+  text-shadow: 4px 4px 3px rgba(0,0,0,0.1); 
+
+}
+/*right*/
+#header .icon{
+    text-align: right;
+    margin-top: 30px;
+}
+
+/*icons*/
+#header .hRight .contact{
+    font-size: 20px;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    color:black;
+    background-color: white;
+}
+/*search copy*/
+#header .hRight #Search{
+    text-align:right;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+input[type=search] {
+    -webkit-appearance: textfield;
+    -webkit-box-sizing: content-box;
+    font-family: inherit;
+    font-size: 100%;
+}
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button {
+    display: none; /* remove the search and cancel icon */
+}
+/* search input field */
+input[type=search] {
+    background: #ededed url(search-icon.png) no-repeat 9px center;
+    border: solid 1px #ccc;
+    padding: 9px 10px 9px 32px;
+    width: 55px;
+ 
+    -webkit-border-radius: 10em;
+    -moz-border-radius: 10em;
+    border-radius: 10em;
+ 
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s;
+}
+input[type=search]:focus {
+    width: 130px;
+    background-color: #fff;
+    border-color: #6dcff6;
+ 
+    -webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
+    -moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
+    box-shadow: 0 0 5px rgba(109,207,246,.5);
+}
+/* placeholder */
+input:-moz-placeholder {
+    color: #999;
+}
+input::-webkit-input-placeholder {
+    color: #999;
+}
+/*end search*/
+/*end header*/
+
+
+/*the a*/
+a{
+    color: black;
+    font-size: 12pt; 
+}
+a:hover{
+    text-decoration: none;
+    color: red;
+}
+/*p{
+    color: black;
+    font-size: 15pt;
+}*/
+
+
+/*wrapper*/
+#content {
+    background-color: white;
+}
+
+.left{
+     border-right: solid 1px #e6e6e6;
+}
+
+.readMore{
+    padding-bottom :20px;
+     border-bottom: solid 1px #e6e6e6;
+     padding-left: 0px;
+     padding-right: 0px;
+}
+
+.readMore .readMore-image{
+
+    padding-left: 0px;
+    padding-right: 0px;
+   
+}
+#readmorelist{
+ padding-bottom: 20px;
+border-bottom: solid 1px #e6e6e6;
+min-height: 280px; 
+}
+.readMore-Item{
+    padding-left: 0px;
+    padding-top: 20px;
+   
+}
+.readMore-Item .readMore-Item-Image{
+    width: 100%;
+    height: auto;
+    
+}
+/*quang cao*/
+.pr{
+    border-bottom: solid 1px #e6e6e6;
+
+}
+.pr .pr-image{
+    width: 100%;
+    height: auto;
+    padding: 20px 0px;
+}
+
+/*small-menu*/
+.smallMenu-item{
+    border-bottom: dotted 1px #333;
+    padding: 20px 0px;
+
+}
+.smallMenu-item .smallMenu-item-image{
+    padding-left: 0px;
+}
+
+.smallMenu-item .smallMenu-item-infor{
+    padding-left: 0px;
+}
+
+h1{
+    border-bottom: 2px solid blue;
+    /*font-size: 100%;*/
+    font-size: 18pt;
+    color: blue;
+}
+h1:hover{
+    cursor: pointer;
+}
+
+.sidebar-item{
+ padding-bottom: 10px;
+border-bottom: 1px dotted #333; 
+padding-left: 0px;
+margin-bottom: 20px;
+}
+.sidebar-item .sidebar-image{
+    padding: 10px 0px;
+}
+
+.hotNews{
+    padding-left: 0px;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.hotNews li{
+margin-bottom: 10px;
+border-bottom: 1px dotted #333;
+padding-bottom: 5px;
+}
+.hotNews li.last{
+margin-bottom: 10px;
+border-bottom:none;
+padding-bottom: 5px;
+}
+
+.sidebar-readMore{
+padding-bottom: 10px;
+border-bottom: 1px dotted #333; 
+padding-left: 0px;
+margin-bottom: 20px;
+}
+.sidebar-readMore .sidebar-readMore-image{
+     padding: 10px 0px;
+    
+}
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: blue; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 10px; /* Some padding */
+    border-radius: 50%; /* Rounded corners */
+}
+
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
+
+/*footer*/
+.footer{
+    margin-top: 20px;
+    min-height: 350px;
+      background-image: url('../image/images.jpg');
+     background-repeat: no-repeat;
+     background-size: cover;
+     padding-bottom: 20px;
+     color: black;
+}
+.footer a{
+  color: black;
+}
+.footer a:hover{
+  color:red;
+}
+.footer .contact{
+    font-size: 20px;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    color:black;
+    background-color: white;
+
+}
+.footer .input{
+height: 40px;;
+width: 160px;
+padding: 5px;
+border: none;
+background-color: white;
+color: #000;
+}
+
